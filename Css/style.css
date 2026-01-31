@@ -15,7 +15,7 @@ html,body{
 .page1{
     min-height: 100vh;
     width: 100%;
-    background-color: #fbfbfb;  
+    background-color: #ffffff;  
     position: relative; 
     padding:0 2vw;
 }
@@ -67,7 +67,7 @@ nav h3{
     text-decoration: none;
     color: rgb(0, 71, 2);
     position: relative;
-    z-index: 10;
+    z-index: 9;
 }
 .nav_part2 h4:hover a{
     color: white;
@@ -116,7 +116,7 @@ nav h3{
 
 }
 .hero2{
-    background-color: rgb(123, 255, 0);
+    background-color: rgb(145, 255, 43);
     height: 30vw;
     width: 30vw;
     position: absolute;
@@ -130,7 +130,7 @@ nav h3{
     animation-iteration-count: infinite;
 }
 .hero3{
-    background: linear-gradient(rgb(255, 255, 0),rgba(47, 255, 0, 0.998));
+    background: linear-gradient(rgb(208, 255, 0),rgba(47, 255, 0, 0.998));
     height: 30vw;
     width: 30vw;
     position: absolute;
@@ -144,17 +144,114 @@ nav h3{
 }
 @keyframes anima{
     from{
-        transform: translate(0%,0%)
+        transform: translate(0%,0%)skew(-12deg);
     }
     to{
-        transform: translate(-22%,11%);
+        transform: translate(-22%,11%)skew(14deg);
     }
 }
 @keyframes anime{
     from{
-        transform: translate(0%,0%)
+        transform: translate(0%,0%)skew(10deg);
     }
     to{
-        transform: translate(-7%,-11%);
+        transform: translate(-7%,-11%)skew(-12deg);
     }
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding: 6vw 0;
+    position: relative;
+}
+.moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.moving-text h1{
+    font-size: 8vw; 
+    display: inline-block;
+}
+.gola{
+    height: 3vw;
+    width:3vw;
+    display: inline-block;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin: 1vw 2vw;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.page2-bottom{
+    height: 80vh;
+    width: 100%;
+    background-color: transparent;
+    padding: 3vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+.page2-bottom h1{
+    font-size: 2vw;
+    width: 50%;
+    line-height: 2vw;
+}
+.bottom-part2{
+    width: 20%;
+}
+.bottom-part2 img{
+    width: 90%;
+
+}
+.bottom-part2 p{
+    margin: 1vw;
+    font-weight: 100;
+} 
+.page2 .gooey{
+    width: 25vw;
+    height: 25vw;
+    background: linear-gradient(to top right,rgb(130, 255, 47),rgb(229, 255, 0));
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    filter: blur(16px);
+    animation-name: gooey;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes gooey{
+    from{
+        transform:translate(10%,-7%) skew(-6deg);
+    }
+    to{
+        transform: translate(-10%,7%)skew(14deg);
+    }
+} 
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
 }
