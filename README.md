@@ -45,21 +45,20 @@ Create day-by-day itineraries, organize activities, reorder plans with drag & dr
 ```text
 travello/
 │
-├── index.html
+├── html/
+|   └── index.html
 │
 ├── css/
 │   └── styles.css
 │
 ├── js/
-│   ├── app.js          # Main logic
-│   ├── ui.js           # UI rendering
-│   ├── storage.js      # Save/load functions
-│   └── dragdrop.js     # Drag & drop logic
+│   ├── script.js          # Main logic
 │
 ├── assets/
 │   ├── images/
-│   └── icons/
-│
+│   ├── icons/
+│   └── font/
+
 └── README.md
 ```
 
