@@ -1,6 +1,6 @@
-@font-face {
+@font-face{
     font-family: neu;
-    src: url(./assets/NeueHaasDisplayRoman.ttf);
+    src: url(../assets/NeueHaasDisplayRoman.ttf);
 }
 *{
     margin: 0;
@@ -53,7 +53,7 @@ nav h3{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 45, 3);
+    background-color: rgb(0, 30, 2);
     border-radius: 50px;
     left: 0;
     bottom: -100%;
@@ -255,8 +255,71 @@ nav h3{
         transform: translate(-7%,5%)skew(6deg);
     }
 } 
+.feature{
+    display: flex;
+    gap: 0.5vw;
+    padding: 3vw 2vw;
+    align-items: center;
+}
+.feature .dot{
+    height: 15px;
+    width: 15px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    justify-self:center;
+}
+.feature h5{
+    font-size: 1.2vw;
+}
 .page3{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: transparent;
+    padding: 4vw 0;
+}
+.elem{
+    height: 110px;
+    width: 100%;
+    position: relative;
+    /* border-top: 0.5px solid rgb(118, 118, 118); */
+    border-bottom: 0.5px solid rgb(118, 118, 118);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+/* .elem-container{
+
+} */
+.fixed-image{
+    height: 30vw;
+    width: 25vw;
+    background-color: transparent;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 99;
+    top: 18%;
+    left: 50%;
+    display: none;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
 }
