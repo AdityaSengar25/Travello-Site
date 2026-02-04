@@ -420,7 +420,7 @@ nav h3{
     width: 100%;
 }
 .footer {
-    min-height: 100vh;
+    height: 105vh;
     width: 100%;
     position: fixed;
     background-color: black;
@@ -431,7 +431,8 @@ nav h3{
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 3vw 2vw;
+    padding: 0 2vw;
+    padding-top: 3vw;
 
 }
 .footer h1{
@@ -456,7 +457,7 @@ nav h3{
 
 }
 .footer-bottom{
-    height: 10vh;
+    height: 5vh;
     width: 100%;
     border-top: 1.2px solid gray;
     display: flex;
@@ -531,4 +532,5 @@ nav h3{
 }
 .footer-bottom h5{
     color: white;
+    margin: 0.8vw;
 }
