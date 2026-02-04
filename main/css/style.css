@@ -1,6 +1,6 @@
 @font-face{
     font-family: neu;
-    src: url(assets/NeueHaasDisplayRoman.ttf);
+    src: url(../assets/NeueHaasDisplayRoman.ttf);
 }
 *{
     margin: 0;
