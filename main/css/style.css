@@ -1,6 +1,6 @@
 @font-face{
     font-family: neu;
-    src: url(../assets/NeueHaasDisplayRoman.ttf);
+    src: url(assets/NeueHaasDisplayRoman.ttf);
 }
 *{
     margin: 0;
@@ -424,4 +424,3 @@ nav h3{
     display: flex;
     bottom: 0;
 }
-12 32 15 31 25 18 30 12 17 16 39 16 54 56 7 9
